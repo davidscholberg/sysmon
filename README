@@ -1,0 +1,36 @@
+GENERAL
+
+sysmon is a terminal app that outputs various system information on a single
+line to standard output. The output format can be specified via a format string
+argument. Each monitor is represented with a unique character in the format
+string. The characters for each monitor are given below:
+
+    c - cpu activity monitor
+    m - used memory monitor
+    i - io activity monitor
+    d - date monitor
+
+All other characters that appear in the format string are printed as is.
+
+This is an example call to sysmon:
+
+    sysmon "c | m | i | d"
+
+The output of this command would look something like this:
+
+    cpu:  2% | mem: 16% | io:  0% | Tue, Apr  2  5:25 PM
+
+COMPILING
+
+To compile sysmon for Linux, use the following command:
+
+    gcc -Wall -lrt -pthread *.c -o sysmon
+
+HACKING
+
+New monitors can be easily added. Take a look at any of the existing monitors
+(cpu_mon.c, mem_mon.c, etc.) to see how they are written, and make sure to
+properly add new monitors in sysmon.c. Note that each monitor runs in it's own
+thread, so you should make sure to only use thread-safe library calls. See 'man
+pthreads' for more info.
+
