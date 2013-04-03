@@ -34,6 +34,9 @@ int main (int argc, char **argv)
         die_sans_errno(
             "Usage:\n"
             "    sysmon <format_string>\n\n"
+            "    sysmon is a terminal app that outputs various system\n"
+            "    information on a single line to standard output. sysmon\n"
+            "    exits after the line is printed.\n\n"
             "    format_string is a string of characters that represents how\n"
             "    the monitors will be displayed. Each monitor is represented\n"
             "    with a unique character, which are listed below:\n\n"
