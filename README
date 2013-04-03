@@ -20,6 +20,12 @@ The output of this command would look something like this:
 
     cpu:  2% | mem: 16% | io:  0% | Tue, Apr  2  5:25 PM
 
+This output represents a snapshot of system resource usage at the time of
+execution. After displaying one line of output, sysmon will exit, so if you
+want to get continuous updates from sysmon, you'll have to a) run it in a loop,
+b) "watch" the command (see 'man watch'), or c) use sysmon in a monitor plugin
+such as xfce4's genmon plugin.
+
 COMPILING
 
 To compile sysmon for Linux, use the following command:
@@ -30,7 +36,7 @@ HACKING
 
 New monitors can be easily added. Take a look at any of the existing monitors
 (cpu_mon.c, mem_mon.c, etc.) to see how they are written, and make sure to
-properly add new monitors in sysmon.c. Note that each monitor runs in it's own
+properly add new monitors in sysmon.c. Note that each monitor runs in its own
 thread, so you should make sure to only use thread-safe library calls. See 'man
 pthreads' for more info.
 
