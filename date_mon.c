@@ -19,8 +19,8 @@
 
 #include <stdio.h>
 #include <time.h>
-#include "multithread.h"
-#include "error.h"
+#include "include/multithread.h"
+#include "include/error.h"
 
 #define BUFFER_LEN  30
 

@@ -19,7 +19,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "error.h"
+#include "include/error.h"
 
 int space_separator( char **out_buffer, const size_t size )
 {

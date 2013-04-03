@@ -20,8 +20,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <errno.h>
-#include "error.h"
-#include "timeout.h"
+#include "include/error.h"
+#include "include/timeout.h"
 
 void timeout( time_t seconds, long nanoseconds)
 {

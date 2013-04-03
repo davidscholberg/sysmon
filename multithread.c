@@ -20,8 +20,8 @@
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "sysmon.h"
-#include "error.h"
+#include "include/sysmon.h"
+#include "include/error.h"
 
 #define OUT_BUF_SIZE    500
 

@@ -19,13 +19,13 @@
 
 #include <stdlib.h>
 #include <string.h>
-#include "sysmon.h"
-#include "multithread.h"
-#include "error.h"
-#include "cpu_mon.h"
-#include "mem_mon.h"
-#include "io_mon.h"
-#include "date_mon.h"
+#include "include/sysmon.h"
+#include "include/multithread.h"
+#include "include/error.h"
+#include "include/cpu_mon.h"
+#include "include/mem_mon.h"
+#include "include/io_mon.h"
+#include "include/date_mon.h"
 
 int main (int argc, char **argv)
 {

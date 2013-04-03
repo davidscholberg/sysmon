@@ -28,7 +28,7 @@ such as xfce4's genmon plugin.
 
 COMPILING
 
-To compile sysmon for Linux, use the following command:
+To compile sysmon for Linux, use the following command in the sysmon directory:
 
     gcc -Wall -lrt -pthread *.c -o sysmon
 

@@ -18,9 +18,9 @@
 */
 
 #include <stdio.h>
-#include "multithread.h"
-#include "error.h"
-#include "timeout.h"
+#include "include/multithread.h"
+#include "include/error.h"
+#include "include/timeout.h"
 
 #define BUFFER_LEN  20
 
